@@ -1,0 +1,102 @@
+#logo {
+        position: sticky;
+        top: 10;
+        background-color: #40372F;
+        margin:10;
+        color: white;
+        font-size: 30px;
+        font-family: 'Emilys Candy', cursive;
+        }
+
+#logo::first-letter {
+                     color: orange;
+                     margin-left: 10px;
+                     font-size: 40px;
+                     font-family: 'Emilys Candy', cursive;
+}
+
+header {
+  z-index: 50;
+  top: 0;
+}
+
+.nav {
+  height: 13vh;
+  background-color: #40372F;
+}
+
+.nav p {
+  font-size: 18px;
+}
+
+main p {
+  font-family: serif;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+  align-items: center;
+}
+
+h2 {
+  font-family: serif;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#aboutus {
+  font-family: serif;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #332C25;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#social_media img {
+  display: inline-block;
+  margin: 0 25px 5px 25px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #332C25;
+  color: silver;
+}
+
+footer li {
+  float: left;
+  background-color: #332C25;
+}
+
+#specialthanks {
+  font-weight: normal;
+  font-size: 20px;
+  font-family: 'Emilys Candy', cursive;
+}
+
+#groupmembers {
+  text-align: center;
+  color: white;
+  padding: 25px;
+}
+

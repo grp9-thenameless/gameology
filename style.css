@@ -1,0 +1,320 @@
+body {
+  margin: 0;
+  background-color: #332C25;
+  user-select: none;
+  font-family: serif;
+}
+
+header {
+  z-index: 50;
+  position: sticky;
+  border-bottom: 2px solid #26211c;
+  top: 0;
+}
+
+.nav {
+  height: 13vh;
+  background: #40372F;
+}
+
+.nav p {
+  font-size: 18px;
+}
+
+#search1 {
+  margin-right: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: silver;
+  background-color: #332C25;
+  height: 25px;
+}
+
+#search2 {
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 25px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: goldenrod;
+  border-color: silver;
+  background-color: black;
+  height: 31px;
+  width: 35px;
+}
+
+#search1::placeholder {
+  color: goldenrod;
+}
+
+#logo {
+        position: sticky;
+        color: white;
+        font-size: 30px;
+        font-family: 'Emilys Candy', cursive;
+        }
+
+#logo::first-letter {
+                     color: orange;
+                     margin-left: 10px;
+                     font-size: 40px;
+                     font-family: 'Emilys Candy', cursive;
+   }
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #40372F;
+  color: silver;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 0;
+  font-size: 12px;
+}
+
+li a:hover, li p:hover {
+  background-color: goldenrod;
+  color: black;
+}
+
+a i {
+  font-size: 3ex;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+/*COVER*/
+/*TITLE LIST*/
+    .title-list{
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        overflow-y: hidden;
+        perspective: 100px;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        flex-wrap: wrap;
+        column-gap: 2vh;
+/*  makes changes to the section with carousel */
+    }
+
+    /*TITLE CARD*/
+    #title-card{
+        max-width: 150px;
+        border: 1px solid black;
+        background-color: #40372F;
+        border-radius: 15px;
+        text-align: center;
+        color: silver;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        
+/*     makes changes to the card in the carousel */
+    }
+
+    #title-card:hover, #title-name:hover{
+        background: #8C7866;
+        transition: all 0.5s ease-in-out;
+        z-index: 5;
+        color: orange;
+/*   makes changes to the card in the carousel when highlighted */
+    }
+
+    #title-img > img{
+        width: 150px;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+/*   makes changes to the image of the card in the carousel */
+    }
+
+/*no details written in so there is nothing that exists to edit */
+    #title-name {
+        padding: 15px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+/*RESULT*/
+#wrapper{
+  width: 80%;
+  margin: auto;
+}
+
+#results{
+    z-index:100;
+    padding-top: 5vh;
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+    row-gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 1vh;
+/* This makes changes to the filtered item page */
+}
+
+.card{
+    max-width: 200px;
+    background-color: #40372F;
+    border: 1px solid grey;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card:hover{
+    background-color: #8C7866;
+    transform: scale(1.065,1.065);
+	  box-shadow: 0 30px 30px var(--secondaryColor);
+	  transition: all 0.3s ease-in-out;
+}
+
+.card-img > img{
+    width: 200px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-name{
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0px;
+    color: var(--textBasic);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-type{
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0px;
+    color: silver;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*BANNER*/
+#banner{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#banner > video{
+  width: 100%; /*can set to 200vh incase*/
+  height: auto;
+  top: -20%;
+  filter: blur(5px);
+}
+
+/*RESULTS*/
+
+#results-details{
+  width: 100%;
+  margin: auto;
+}
+
+.detail-card{
+  display: block;
+  padding: 2px;
+  text-align: center;
+  justify-content: center;
+  max-width: 350px;
+  max-height: 580px;
+  border: 2px solid orange;
+  border-radius: 25px;
+  background: orange;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.detail-wrapper{
+  margin-top: 5vh;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.detail-card > img{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.detail-top{
+  display:block;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.detail-top >img{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.detail-bot{
+  padding: 5px;
+  word-wrap: break-word;
+}
+
+.detail-abt{
+  
+}
+
+.glass{
+  z-index: 998;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+}
+
+.det-btn{
+  height: 5vh;
+  background-color:orange;
+  color:#40372F;
+  border-radius:5px;
+}
+
+.det-btn:hover{
+  color:orange;
+  background-color:#40372F;
+}
